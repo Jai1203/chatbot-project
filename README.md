@@ -1,82 +1,58 @@
-\# LLM-Powered Customer Chatbot
-
-
-
-A full-stack chatbot that lets you query a customer database using plain English.
-
-Type "Show me all female customers from Mumbai" and the AI converts it to SQL and shows results.
-
-
-
-\*\*Stack:\*\* FastAPI · SQLite · Groq (Llama 3.1) · ReactJS
-
-
-
-\## Setup Instructions
-
-
-
-\### Prerequisites
-
-\- Python 3.11+
-
-\- Node.js 18+
-
-\- Groq API key (free) from https://console.groq.com
-
-
-
-\### Backend Setup
-
+🚀 LLM-Powered Customer Chatbot
 cd backend
 
 python -m venv venv
-
-venv\\Scripts\\activate
+venv\Scripts\activate   # (Windows)
 
 pip install -r requirements.txt
 
 copy .env.example .env
+# Add your Groq API key inside .env
 
-(Add your Groq API key inside .env)
-
-python seed\_db.py
+python seed_db.py
 
 uvicorn main:app --reload --port 8000
+🌐 Frontend Setup
 
-
-
-\### Frontend Setup (new terminal)
+Open a new terminal:
 
 cd frontend
 
 npm install
-
 npm start
 
+👉 Visit: http://localhost:3000
 
+💡 Try These Queries
 
-Open http://localhost:3000
+Test the chatbot with:
 
+"Show me all female customers from Mumbai"
+"List all customers from Delhi"
+"How many male customers are there?"
+"List all customers"
+🔌 API Endpoints
+Method	Endpoint	Description
+POST	/chat	Send natural language query
+GET	/customers	Fetch all customers
+GET	/docs	Swagger API documentation
+🧠 How It Works
+User enters a natural language query
+LLM converts it → SQL query
+Backend executes query on SQLite
+Results sent back → displayed in UI
+🚀 Future Improvements
+🔐 Authentication & user roles
+📊 Data visualization dashboards
+🧾 Query history tracking
+🌍 Multi-database support (PostgreSQL, MySQL)
+🧠 Smarter prompt engineering for complex queries
+💥 Why This Matters
 
+This project demonstrates a real-world use case of LLMs in:
 
-\## Example Queries
+Data accessibility
+Business intelligence
+Developer productivity
 
-\- Show me all female customers from Mumbai
-
-\- List all customers from Delhi
-
-\- How many male customers are there?
-
-\- List all customers
-
-
-
-\## API Endpoints
-
-\- POST /chat — send natural language query
-
-\- GET /customers — list all customers
-
-\- GET /docs — interactive API documentation
-
+It’s not just a chatbot — it’s a natural language interface for databases.
