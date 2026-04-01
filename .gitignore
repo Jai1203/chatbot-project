@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+*.db
+chatbot.log
+
+# Node
+frontend/node_modules/
+frontend/build/
+node_modules/
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
