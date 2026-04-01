@@ -208,7 +208,7 @@ export default function App() {
     setError(null);
 
     try {
-      const res = await fetch("/chat", {
+    const res = await fetch("https://chatbot-backend-e6ss.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: text }),
