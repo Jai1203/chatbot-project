@@ -32,7 +32,8 @@ This project focuses on LLM integration, backend query generation, and full-stac
 
 
 🔄**Data Flow**
-User enters query (natural language)
+
+**User enters query (natural language)
         ↓
 React Frontend
         ↓
@@ -44,10 +45,11 @@ SQL Query Generation
         ↓
 SQLite Database Execution
         ↓
-Results returned to UI
+Results returned to UI**
 
 
 🤖 **Core Logic**
+
 1) User input is sent to the LLM with structured prompting
 2) LLM generates a valid SQL query
 3) Backend validates the query (only SELECT allowed)
@@ -102,10 +104,11 @@ GET /docs
 Interactive Swagger documentation.
 
 🛠 **Local Setup**
-Prerequisites
-Python 3.11+
-Node.js 18+
-Groq API key
+**Prerequisites**
+
+1) Python 3.11+
+2) Node.js 18+
+3) Groq API key
 
 1️⃣ **Backend (FastAPI)**
 cd backend
@@ -135,7 +138,8 @@ Frontend runs at:
 http://localhost:3000
 
 📁 **Project Structure**
-chatbot-project/
+
+**chatbot-project/
 ├── backend/
 │   ├── main.py
 │   ├── seed_db.py
@@ -145,19 +149,21 @@ chatbot-project/
     ├── public/
     └── src/
         ├── index.js
-        └── App.js
+        └── App.js**
         
 ⚠️ **Notes**
+
 1) Backend is hosted on Render’s free tier
 2) First request after inactivity may take 30–60 seconds
 3) Only SELECT queries are allowed for safety
 
 
 🎯 **Project Goals**
-Demonstrate real-world LLM integration in backend systems
-Simplify database interaction using natural language
-Build a clean full-stack application with production-style flow
-Create a project suitable for interviews and technical discussions
+
+1) Demonstrate real-world LLM integration in backend systems
+2) Simplify database interaction using natural language
+3) Build a clean full-stack application with production-style flow
+4) Create a project suitable for interviews and technical discussions
 
 👨‍💻 **Author**
 
@@ -166,6 +172,7 @@ Aspiring Software Engineer
 Interested in Full-Stack Development, Machine Learning, and AI Systems
 
 ✅ **GIT COMMANDS (COPY–PASTE)**
+
 git status
 git add README.md
 git commit -m "Refactor README with clean structure and improved clarity"
