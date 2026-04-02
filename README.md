@@ -33,19 +33,13 @@ This project focuses on LLM integration, backend query generation, and full-stac
 
 🔄**Data Flow**
 
-**User enters query (natural language)
-        ↓
-React Frontend
-        ↓
-FastAPI Backend
-        ↓
-Groq LLM (Llama 3.1)
-        ↓
-SQL Query Generation
-        ↓
-SQLite Database Execution
-        ↓
-Results returned to UI**
+User enters query (natural language)
+↓ React Frontend
+↓ FastAPI Backend
+↓ Groq LLM (Llama 3.1)
+↓ SQL Query Generation
+↓ SQLite Database Execution
+↓ Results returned to UI
 
 
 🤖 **Core Logic**
@@ -139,7 +133,7 @@ http://localhost:3000
 
 📁 **Project Structure**
 
-**chatbot-project/
+chatbot-project/
 ├── backend/
 │   ├── main.py
 │   ├── seed_db.py
@@ -149,7 +143,7 @@ http://localhost:3000
     ├── public/
     └── src/
         ├── index.js
-        └── App.js**
+        └── App.js
         
 ⚠️ **Notes**
 
