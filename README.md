@@ -2,6 +2,13 @@
 
 A full-stack AI chatbot that converts plain English questions into SQL queries and fetches results from a customer database.
 
+
+https://github.com/user-attachments/assets/c8847ee7-6a38-495a-baf1-e9c6b8c7d955
+
+
+<img width="1918" height="935" alt="Screenshot 2026-04-02 155750" src="https://github.com/user-attachments/assets/ae21d02a-cc94-4fd4-be2a-bcd4c157b4b8" />
+
+
 ## Live Demo
 
 - Frontend: https://chatbot-project-plum-iota.vercel.app
